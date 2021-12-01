@@ -2,3 +2,147 @@
   font-size: 48px;
   padding: 24px;
 }
+
+.h1 {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+.h2 {
+  font-size: 2.44rem;
+  line-height: 1.5;
+}
+
+.p {
+  font-size: 1.24rem;
+  line-height: 1.5;
+}
+
+.caption {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+}
+
+.section {
+  max-width: 1122px;
+  width: 100%;
+  padding: 0 24px 0 24px;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+}
+
+.center {
+  max-width: 1122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 24px 0 24px;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+}
+
+.row {
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 12px 0 12px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.topic {
+  flex-shrink: 0;
+  width: 25%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 48px;
+  padding: 12px;
+
+  @media (max-width: 728px) {
+    width: 50%;
+  }
+
+  @media (max-width: 428px) {
+    width: 100%;
+  }
+}
+
+.topicImage {
+  display: flex;
+  width: 100%;
+  height: 188px;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.topicTitle {
+  font-weight: 600;
+  margin-top: 24px;
+  display: block;
+}
+
+.topicText {
+  margin-top: 16px;
+  display: block;
+  line-height: 1.5;
+}
+
+.actionButton {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 268px;
+  min-height: 88px;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 24px 24px 24px 0;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+}
+
+.actionButtonTitle {
+  font-weight: 600;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.actionButtonText {
+  margin-top: 8px;
+  display: block;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.timelineItemDate {
+  flex-shrink: 0;
+  margin-right: 24px;
+  min-width: 88px;
+}
+
+.timelineItemDot {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background: #000;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timelineItemText {
+  min-width: 10%;
+  width: 100%;
+  padding-left: 24px;
+}

@@ -114,15 +114,14 @@ section {
 
 html,
 body {
-  --color-background: #fff;
-  --color-text: #000;
+  --color-background: #ececec;
+  --color-text: rgba(0, 0, 0, 1);
 
   font-size: 16px;
-  text-transform: uppercase;
   background: var(--color-background);
   color: var(--color-text);
-  font-family: "Mono", -apple-system, BlinkMacSystemFont, helvetica neue,
-    helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica,
+    sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
