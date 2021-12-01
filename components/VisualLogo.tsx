@@ -9,8 +9,8 @@ const VisualLogo = (props) => {
         y1="75.5081"
         y2="75.5081"
       >
-        <stop offset=".53" stop-color="#4893f5" />
-        <stop offset="1" stop-color="#2ef093" />
+        <stop offset=".53" stopColor="#4893f5" />
+        <stop offset="1" stopColor="#2ef093" />
       </linearGradient>
       <linearGradient
         id="b"
@@ -20,8 +20,8 @@ const VisualLogo = (props) => {
         y1="49.9666"
         y2="49.9666"
       >
-        <stop offset="0" stop-color="#2ef093" />
-        <stop offset=".427083" stop-color="#4f8fee" />
+        <stop offset="0" stopColor="#2ef093" />
+        <stop offset=".427083" stopColor="#4f8fee" />
       </linearGradient>
       <linearGradient
         id="c"
@@ -31,8 +31,8 @@ const VisualLogo = (props) => {
         y1="87.9968"
         y2="62.6091"
       >
-        <stop offset="0" stop-color="#4893f5" />
-        <stop offset="1" stop-color="#2ef093" />
+        <stop offset="0" stopColor="#4893f5" />
+        <stop offset="1" stopColor="#2ef093" />
       </linearGradient>
       <linearGradient
         id="d"
@@ -42,8 +42,8 @@ const VisualLogo = (props) => {
         y1="21.399"
         y2="21.399"
       >
-        <stop offset=".619792" stop-color="#489af1" />
-        <stop offset="1" stop-color="#2ef093" />
+        <stop offset=".619792" stopColor="#489af1" />
+        <stop offset="1" stopColor="#2ef093" />
       </linearGradient>
       <clipPath id="e">
         <path d="m.461121.319565h74.6757v113.142h-74.6757z" />

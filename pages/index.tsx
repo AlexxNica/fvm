@@ -6,6 +6,7 @@ import App from "@components/App";
 import Logo from "@components/Logo";
 import VisualLogo from "@components/VisualLogo";
 import Checkmark from "@components/Checkmark";
+import Footer from "@components/Footer";
 
 function TopicComponent(props) {
   return (
@@ -33,7 +34,7 @@ function TimelineItem(props) {
       {props.isChecked ? (
         <span
           className={styles.timelineItemDot}
-          style={{ background: "green", color: "#fff" }}
+          style={{ background: "var(--color-green)", color: "#fff" }}
         >
           <Checkmark height="20px" />
         </span>
@@ -158,11 +159,27 @@ function Home(props) {
         <TopicComponent title="Bridge another language">...</TopicComponent>
         <TopicComponent title="Engage with the community">...</TopicComponent>
       </div>
+
+      <Footer />
     </App>
   );
 }
 
 export async function getServerSideProps(context) {
+  if (
+    !context ||
+    !context.query ||
+    !context.query.access ||
+    context.query.access !== "fvm4life"
+  ) {
+    return {
+      redirect: {
+        permanent: false,
+        destination: "https://filecoin.io",
+      },
+    };
+  }
+
   return {
     props: {},
   };

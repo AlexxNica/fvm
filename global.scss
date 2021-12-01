@@ -10,6 +10,16 @@
     format("woff");
 }
 
+@font-face {
+  font-family: "Book";
+  src: url("/book.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "Heading";
+  src: url("/medium.woff2") format("woff");
+}
+
 html,
 body,
 div,
@@ -114,14 +124,22 @@ section {
 
 html,
 body {
-  --color-background: #ececec;
-  --color-text: rgba(0, 0, 0, 1);
+  --color-dark-black: #1c2035;
+  --color-anchor-gray: #535661;
+  --color-slate-gray: #888a93;
+  --color-shark-gray: #c8c9cc;
+  --color-light-gray: #e7e8ec;
+  --color-green: #46a546;
+
+  --theme-background: var(--color-light-gray);
+  --theme-text: var(--color-dark-black);
+  --theme-success: var(--color-success);
 
   font-size: 16px;
-  background: var(--color-background);
-  color: var(--color-text);
-  font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica,
-    sans-serif;
+  background: var(--color-dark-black);
+  color: var(--color-light-gray);
+  font-family: "Book", -apple-system, BlinkMacSystemFont, helvetica neue,
+    helvetica, sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
