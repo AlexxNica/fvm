@@ -1,0 +1,26 @@
+.section {
+  border-top: 1px solid var(--color-anchor-gray);
+  width: 100%;
+
+  &:last-child {
+    border-bottom: 1px solid var(--color-anchor-gray);
+  }
+}
+
+.heading {
+  padding: 16px 0px 16px 0;
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.children {
+  display: block;
+  padding: 16px 0px 48px 0px;
+}

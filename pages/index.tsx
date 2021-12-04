@@ -5,6 +5,7 @@ import * as React from "react";
 import App from "@components/App";
 import Logo from "@components/Logo";
 import VisualLogo from "@components/VisualLogo";
+import CondensedSection from "@components/CondensedSection";
 import Checkmark from "@components/Checkmark";
 import Footer from "@components/Footer";
 
@@ -89,6 +90,25 @@ function Home(props) {
       </div>
 
       <div className={styles.row}>
+        <TopicComponent title="Multi-generational storage">
+          Lock a Filecoin balance as a bounty, and distribute the bounty to
+          multiple sotrage providers who have a copy of the data..
+        </TopicComponent>
+
+        <TopicComponent title="Commodities market for storage">
+          Methods for smooth predictability about pricing for storing content
+          for both producers and consumers.
+        </TopicComponent>
+
+        <TopicComponent title="Stabilizing market-making action on the storage market">
+          Allow anyone to purchase storage futures or other similar derivatives
+        </TopicComponent>
+
+        <TopicComponent title="Storage bounties">
+          Data producers can put a bounty on their storage and set other
+          criterias.
+        </TopicComponent>
+
         <TopicComponent title="Decentralized computation">...</TopicComponent>
 
         <TopicComponent title="Data DAOs">...</TopicComponent>
@@ -145,7 +165,61 @@ function Home(props) {
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.h2} style={{ marginTop: 48 }}>
+        <h2 className={styles.h2} style={{ marginTop: 48, marginBottom: 48 }}>
+          Opportunities
+        </h2>
+
+        <CondensedSection title="Data DAOs">
+          <p className={styles.p} style={{ maxWidth: 768 }}>
+            Lorem Ipsum: What happens if you create Web3 sign-in and a payments
+            process for a data marketplace? Traditional data marketplaces, such
+            as Thompson Reuters and Dun & Bradstreet, require purchasers to have
+            credit cards…a business address… and so on. But with Ethereum
+            addresses acting as both the payment facilitation mechanism and user
+            identity verification, it quickly becomes clear that AIs, DAOs
+            (Decentralized Autonomous Organisations), and machines can all start
+            owning, controlling and selling real-time data.
+          </p>
+        </CondensedSection>
+
+        <CondensedSection title="Cross chain oracles">
+          <p className={styles.p} style={{ maxWidth: 768 }}>
+            Lorem Ipsum: As things currently stand, the blockchain industry is
+            siloed among many different platforms and protocols resulting in
+            various islands of blockchains. Restrictions regarding assets
+            transfers and data migration between different blockchains reduce
+            the usability and comfort of users, and hinder novel developments
+            within the blockchain ecosystem. Interoperability will be the main
+            topics of next-generation blockchain technologies.{" "}
+          </p>
+
+          <p className={styles.p} style={{ maxWidth: 768, marginTop: 48 }}>
+            In this paper, we focus on how to enable interoperability between
+            two heterogeneous blockchains in the context of data migration. We
+            first build an cross-chain data migration architecture based on data
+            migration oracle. Second, we design a data migration mechanism based
+            on former architecture. By employing the proposed data migration
+            architecture, it is equivalent to opening a secure channel between
+            two heterogeneous blockchains allowing secure data migration. By
+            applying data migration mechanism, the confidentiality, integrity
+            and security of migrated data can be well guaranteed.
+          </p>
+        </CondensedSection>
+
+        <CondensedSection title="Compute over data">
+          <p className={styles.p} style={{ maxWidth: 768 }}>
+            Lorem Ipsum: With Compute-to-Data, datasets are not allowed to leave
+            the premises of the data holder, only algorithms can be permitted to
+            run on them under certain conditions within an isolated and secure
+            environment. Algorithms are an asset type just like datasets. They
+            they too can have a pool or a fixed price to determine their price
+            whenever they are used.
+          </p>
+        </CondensedSection>
+      </div>
+
+      <div className={styles.section}>
+        <h2 className={styles.h2} style={{ marginTop: 76 }}>
           Want to hack on the FVM?
         </h2>
         <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>

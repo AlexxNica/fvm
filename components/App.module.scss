@@ -27,7 +27,7 @@
 
 .caption {
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--theme-text);
   line-height: 1.5;
 }
 
@@ -84,7 +84,7 @@
   width: 100%;
   height: 188px;
   display: block;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--theme-border);
 }
 
 .topicTitle {

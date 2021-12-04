@@ -131,8 +131,10 @@ body {
   --color-light-gray: #e7e8ec;
   --color-green: #46a546;
 
-  --theme-background: var(--color-light-gray);
-  --theme-text: var(--color-dark-black);
+  --theme-background: var(--color-dark-black);
+  --theme-text: var(--color-light-gray);
+  --theme-border: var(--color-slate-gray);
+  --theme-button: var(--color-anchor-gray);
   --theme-success: var(--color-success);
 
   font-size: 16px;
