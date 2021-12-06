@@ -8,6 +8,7 @@ import VisualLogo from "@components/VisualLogo";
 import CondensedSection from "@components/CondensedSection";
 import Checkmark from "@components/Checkmark";
 import Footer from "@components/Footer";
+import Navigation from "@components/Navigation";
 
 function TopicComponent(props) {
   return (
@@ -54,19 +55,14 @@ function Home(props) {
 
   return (
     <App title="fvm" description="fvm" url="https://fvm.filecoin.io">
-      <div className={styles.section} style={{ paddingTop: 48 }}>
-        <p className={styles.caption} style={{ maxWidth: 488 }}>
-          Programmable storage is coming. The <b>Filecoin Virtual Machine</b>{" "}
-          defines the rules for computing a new valid state on the Filecoin
-          Network, block to block.
-        </p>
-      </div>
+      <Navigation />
 
       <div
         className={styles.center}
         style={{ marginTop: 48, marginBottom: 48 }}
       >
-        <VisualLogo height="428px" />
+        <div className={styles.centerText}>Programmable storage is coming</div>
+        <VisualLogo height="428px" style={{ opacity: 0.4 }} />
       </div>
 
       <div className={styles.section}>
