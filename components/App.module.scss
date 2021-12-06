@@ -11,17 +11,31 @@
 .h1 {
   font-family: "Heading";
   font-size: 4rem;
+  font-weight: 400;
   line-height: 1.5;
 }
 
 .h2 {
   font-family: "Heading";
   font-size: 2.44rem;
+  font-weight: 400;
   line-height: 1.5;
+}
+
+.h3 {
+  font-family: "Heading";
+  font-size: 1.24rem;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .p {
   font-size: 1.24rem;
+  line-height: 1.5;
+}
+
+.desc {
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -45,10 +59,15 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-height: 70vh;
   padding: 0 24px 0 24px;
   box-sizing: border-box;
   margin: 0 auto 0 auto;
   position: relative;
+
+  @media (max-width: 768px) {
+    min-height: auto;
+  }
 }
 
 .centerText {
@@ -116,19 +135,20 @@
 .actionButton {
   display: inline-flex;
   flex-direction: column;
-  max-width: 268px;
   min-height: 88px;
   padding: 16px;
-  border: 1px solid var(--theme-border);
+  max-width: 274px;
   margin: 24px 24px 24px 0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.07);
   background: var(--theme-button);
   cursor: pointer;
 }
 
 .actionButtonTitle {
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Halbfett";
   display: block;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .actionButtonText {
@@ -140,21 +160,22 @@
 
 .timelineItem {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .timelineItemDate {
   flex-shrink: 0;
   margin-right: 24px;
-  min-width: 88px;
+  font-family: "MonoMedium";
+  margin-top: 2px;
 }
 
 .timelineItemDot {
-  height: 32px;
-  width: 32px;
-  border-radius: 32px;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
   background: #000;
   flex-shrink: 0;
   display: inline-flex;
