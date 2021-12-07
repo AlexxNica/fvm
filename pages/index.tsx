@@ -9,6 +9,50 @@ import CondensedSection from "@components/CondensedSection";
 import Checkmark from "@components/Checkmark";
 import Footer from "@components/Footer";
 import Navigation from "@components/Navigation";
+import TopicPickerGrid from "@components/TopicPickerGrid";
+
+const TOPICS = [
+  {
+    topic: "Topic One",
+    description:
+      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+  },
+  {
+    topic: "Topic Two",
+    description:
+      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+  },
+  {
+    topic: "Topic Three",
+    description:
+      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+  },
+  {
+    topic: "Topic Four",
+    description:
+      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+  },
+  {
+    topic: "Topic Five",
+    description:
+      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+  },
+  {
+    topic: "Topic Six",
+    description:
+      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+  },
+  {
+    topic: "Topic Seven",
+    description:
+      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+  },
+  {
+    topic: "Topic Eight",
+    description:
+      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+  },
+];
 
 function ListComponent(props) {
   return (
@@ -105,42 +149,7 @@ function Home(props) {
       </div>
 
       <div className={styles.row}>
-        <TopicComponent title="Multi-generational storage">
-          Lock a Filecoin balance as a bounty, and distribute the bounty to
-          multiple sotrage providers who have a copy of the data..
-        </TopicComponent>
-
-        <TopicComponent title="Commodities market for storage">
-          Methods for smooth predictability about pricing for storing content
-          for both producers and consumers.
-        </TopicComponent>
-
-        <TopicComponent title="Stabilizing market-making action on the storage market">
-          Allow anyone to purchase storage futures or other similar derivatives
-        </TopicComponent>
-
-        <TopicComponent title="Storage bounties">
-          Data producers can put a bounty on their storage and set other
-          criterias.
-        </TopicComponent>
-
-        <TopicComponent title="Decentralized computation">...</TopicComponent>
-
-        <TopicComponent title="Data DAOs">...</TopicComponent>
-
-        <TopicComponent title="IP NFTs">...</TopicComponent>
-
-        <TopicComponent title="Reputation systems">...</TopicComponent>
-
-        <TopicComponent title="Digital identity">
-          Provides individual identity in the form of digital assets.
-        </TopicComponent>
-
-        <TopicComponent title="Data processing">...</TopicComponent>
-
-        <TopicComponent title="Financial services">...</TopicComponent>
-
-        <TopicComponent title="Access control">...</TopicComponent>
+        <TopicPickerGrid topics={TOPICS} />
       </div>
 
       <div className={styles.section}>
