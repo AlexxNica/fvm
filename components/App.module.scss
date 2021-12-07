@@ -94,6 +94,15 @@
   flex-wrap: wrap;
 }
 
+.rowCol {
+  width: 50%;
+  padding: 12px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
 .topic {
   flex-shrink: 0;
   width: 25%;
@@ -187,4 +196,35 @@
   min-width: 10%;
   width: 100%;
   padding-left: 24px;
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.listItemLeft {
+  border: 1px solid var(--theme-border);
+  flex-shrink: 0;
+  width: 40%;
+  height: 64px;
+}
+
+.listItemRight {
+  min-width: 10%;
+  width: 100%;
+  padding-left: 24px;
+}
+
+.listItemTitle {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.listItemParagraph {
+  font-size: 1rem;
+  line-height: 1.5;
 }
