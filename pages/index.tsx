@@ -245,7 +245,7 @@ function Home(props) {
           Opportunities
         </h2>
 
-        <CondensedSection title="Data DAOs">
+        <CondensedSection title="Data DAOs" expanded>
           <p className={styles.p} style={{ maxWidth: 768 }}>
             Lorem Ipsum: Filecoin is a peer-to-peer network that stores files,
             with built-in economic incentives to ensure files are stored

@@ -5,7 +5,7 @@ import * as React from "react";
 import Dismiss from "@components/Dismiss";
 
 function CondensedSection(props) {
-  const [state, setState] = React.useState({ show: false });
+  const [state, setState] = React.useState({ show: props.expanded });
 
   return (
     <div className={styles.section}>
