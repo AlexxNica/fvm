@@ -31,7 +31,7 @@ function TopicPickerGrid(props) {
         })}
       </div>
       <div className={styles.right}>
-        <div className={styles.h2}>{state.selected.topic}</div>
+        <div className={styles.h3}>{state.selected.topic}</div>
         <div className={styles.p}>{state.selected.description}</div>
       </div>
     </div>

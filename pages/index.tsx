@@ -188,7 +188,7 @@ function Home(props) {
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.h2} style={{ marginTop: 88 }}>
+        <h2 className={styles.h2} style={{ marginTop: 96 }}>
           Get ready to build
         </h2>
         <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>
@@ -345,7 +345,7 @@ function Home(props) {
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.h2} style={{ marginTop: 88 }}>
+        <h2 className={styles.h2} style={{ marginTop: 96 }}>
           Want to hack on the FVM?
         </h2>
         <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>

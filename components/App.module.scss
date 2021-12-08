@@ -1,5 +1,5 @@
 .body {
-  font-size: 48px;
+  font-size: var(--typescale-base);
   padding: 24px;
 }
 
@@ -9,38 +9,40 @@
 }
 
 .h1 {
+  font-size: var(--typescale-4);
   font-family: "Heading";
-  font-size: 4rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .h2 {
+  font-size: var(--typescale-3);
   font-family: "Heading";
-  font-size: 2.44rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .h3 {
+  font-size: var(--typescale-2);
   font-family: "Heading";
-  font-size: 1.24rem;
   font-weight: 400;
   line-height: 1.4;
 }
 
 .p {
-  font-size: 1.24rem;
+  font-size: var(--typescale-base);
   line-height: 1.5;
 }
 
 .desc {
-  font-size: 1rem;
+  font-size: var(--typescale-base);
+  color: var(--color-light-gray);
   line-height: 1.5;
+  max-width: 568px;
 }
 
 .caption {
-  font-size: 1rem;
+  font-size: var(--typescale-1);
   color: var(--theme-text);
   line-height: 1.5;
 }
@@ -122,11 +124,11 @@
 }
 
 .topicImage {
+  border: 1px solid var(--theme-border);
   display: flex;
   width: 100%;
   height: 188px;
   display: block;
-  border: 1px solid var(--theme-border);
 }
 
 .topicTitle {
@@ -142,6 +144,7 @@
 }
 
 .actionButton {
+  background: var(--theme-button);
   display: inline-flex;
   flex-direction: column;
   min-height: 88px;
@@ -149,22 +152,21 @@
   max-width: 274px;
   margin: 24px 24px 24px 0;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.07);
-  background: var(--theme-button);
   cursor: pointer;
 }
 
 .actionButtonTitle {
-  font-weight: 400;
+  font-size: var(--typescale-base);
   font-family: "Halbfett";
+  font-weight: 400;
   display: block;
-  font-size: 1rem;
 }
 
 .actionButtonText {
+  font-size: var(--typescale-1);
   margin-top: 8px;
   display: block;
   line-height: 1.5;
-  font-size: 0.8rem;
 }
 
 .timelineItem {
@@ -175,17 +177,18 @@
 }
 
 .timelineItemDate {
+  font-family: "MonoMedium";
+  font-size: var(--typescale-1);
   flex-shrink: 0;
   margin-right: 24px;
-  font-family: "MonoMedium";
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .timelineItemDot {
   height: 24px;
   width: 24px;
   border-radius: 24px;
-  background: #000;
+  background: var(--color-anchor-gray);
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
@@ -220,11 +223,13 @@
 }
 
 .listItemTitle {
-  font-size: 1rem;
+  font-size: var(--typescale-1);
+  font-family: "Halbfett";
   line-height: 1.5;
 }
 
 .listItemParagraph {
-  font-size: 1rem;
+  font-size: var(--typescale-1);
   line-height: 1.5;
+  color: var(--color-shark-gray);
 }

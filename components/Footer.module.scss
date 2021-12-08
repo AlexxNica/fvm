@@ -1,5 +1,5 @@
 .container {
-  background: var(--color-dark-black);
+  background: var(--color-black);
   color: var(--color-light-gray);
 }
 
@@ -43,10 +43,10 @@
 }
 
 .title {
+  color: var(--color-light-gray);
+  font-size: var(--typescale-1);
   padding-left: 48px;
   font-weight: 600;
-  color: var(--color-light-gray);
-  font-size: 0.9rem;
 
   @media (max-width: 768px) {
     padding-left: 12px;
@@ -58,11 +58,11 @@
 }
 
 .link {
+  font-size: var(--typescale-1);
+  color: var(--color-slate-gray);
   display: block;
-  font-size: 0.9rem;
   margin-top: 12px;
   padding-left: 48px;
-  color: var(--color-slate-gray);
   cursor: pointer;
   text-decoration: none;
 

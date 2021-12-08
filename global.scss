@@ -129,6 +129,13 @@ section {
 
 html,
 body {
+  --typescale-4: 2.25rem;
+  --typescale-3: 1.75rem;
+  --typescale-2: 1.25rem;
+  --typescale-base: 1rem;
+  --typescale-1: 0.875rem;
+
+  --color-black: #0d0f19;
   --color-dark-black: #1c2035;
   --color-anchor-gray: #535661;
   --color-slate-gray: #888a93;
@@ -136,14 +143,18 @@ body {
   --color-light-gray: #e7e8ec;
   --color-green: #46a546;
 
-  --theme-background: var(--color-dark-black);
+  --theme-background: var(--color-black);
   --theme-text: var(--color-light-gray);
   --theme-border: var(--color-slate-gray);
   --theme-button: #1a3a96;
   --theme-success: var(--color-success);
 
   font-size: 16px;
-  background: var(--color-dark-black);
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  background: var(--theme-background);
   color: var(--color-light-gray);
   font-family: "Book", -apple-system, BlinkMacSystemFont, helvetica neue,
     helvetica, sans-serif;
