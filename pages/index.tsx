@@ -18,9 +18,9 @@ const TOPICS = [
       "You can use Filecoin smart contracts that run on the Filecoin blockchain to take advantage of additional compute power that a storage provider can provide to do post processing on your data before retrieval.",
   },
   {
-    topic: "Dataset preservation",
+    topic: "Dataset preservation and permeance",
     description:
-      "By leveraging a smart contract on the Filecoin Network, you can create a Filecoin account that has a balance and place a bounty for storage providers to store your data. The contract can also define rules like a regular contract and automatically enforce them via the code.",
+      "Keep your data around forever. By leveraging a smart contract on the Filecoin Network, you can create a Filecoin account that has a balance and place a bounty for any storage providers to store your data. The contract can also define rules for storage and automatically enforce them via the code.",
   },
   {
     topic: "Storage markets",
@@ -28,12 +28,12 @@ const TOPICS = [
       "You can use a Filecoin smart contract to create a market place for data on the Filecoin Network. This program can become an entire business model on its own and help you monetize your datasets and do price discovery for the value of any given dataset.",
   },
   {
-    topic: "Used owned data",
+    topic: "IP NFTs",
     description:
-      "Filecoin is great at reducing the redundancy of data by making data public and available to everyone. A smart contract on the Filecoin Network can create a useful program that anyone in the world can use over existing data on the network.",
+      "A smart contract on the Filecoin Network can create a useful program where anyone in the world can use private data. Ownership of the data can be secured by the network and access can be granted to specific entities.",
   },
   {
-    topic: "Liquidity infrastructure",
+    topic: "DeFi liquidity infrastructure",
     description:
       "The Filecoin Network smart contracts can be used to provide financial products and services that are accessible to anyone in the world. No centralized authorities can block payments or deny you access. Smart contracts can also provide liquidity for storage and other applications.",
   },

@@ -27,7 +27,7 @@ function TopicPickerGrid(props) {
                 }}
               >
                 <div className={styles.number}>
-                  {`${index}`.padStart(3, `0`)}
+                  {`${index + 1}`.padStart(3, `0`)}
                 </div>
                 <div className={styles.text}>{each.topic}</div>
               </div>
