@@ -13,44 +13,34 @@ import TopicPickerGrid from "@components/TopicPickerGrid";
 
 const TOPICS = [
   {
-    topic: "Topic One",
+    topic: "Decentralized compute infrastructure",
     description:
-      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+      "You can use Filecoin smart contracts that run on the Filecoin blockchain to take advantage of additional compute power that a storage provider can provide to do post processing on your data before retrieval.",
   },
   {
-    topic: "Topic Two",
+    topic: "Dataset preservation",
     description:
-      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+      "By leveraging a smart contract on the Filecoin Network, you can create a Filecoin account that has a balance and place a bounty for storage providers to store your data. The contract can also define rules like a regular contract and automatically enforce them via the code.",
   },
   {
-    topic: "Topic Three",
+    topic: "Storage markets",
     description:
-      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+      "You can use a Filecoin smart contract to create a market place for data on the Filecoin Network. This program can become an entire business model on its own and help you monetize your datasets and do price discovery for the value of any given dataset.",
   },
   {
-    topic: "Topic Four",
+    topic: "Used owned data",
     description:
-      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+      "Filecoin is great at reducing the redundancy of data by making data public and available to everyone. A smart contract on the Filecoin Network can create a useful program that anyone in the world can use over existing data on the network.",
   },
   {
-    topic: "Topic Five",
+    topic: "Liquidity infrastructure",
     description:
-      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+      "The Filecoin Network smart contracts can be used to provide financial products and services that are accessible to anyone in the world. No centralized authorities can block payments or deny you access. Smart contracts can also provide liquidity for storage and other applications.",
   },
   {
-    topic: "Topic Six",
+    topic: "Data DAOS",
     description:
-      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
-  },
-  {
-    topic: "Topic Seven",
-    description:
-      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
-  },
-  {
-    topic: "Topic Eight",
-    description:
-      "Smart contracts on the Filecoin Network help you exchange anything of value, money, property, shares, and now storage in a conflict free way.",
+      "DAO are member-owned communities without centralized leadership. They are a safe way to collaborate with internet strangers and a safe place to commit funds for a specific cause. Now with IP NFTs and data storage capabilities, the participants of your DAO can participate in new novel applications.",
   },
 ];
 
@@ -163,34 +153,18 @@ function Home(props) {
         <h2 className={styles.h2} style={{ marginTop: 88, marginBottom: 24 }}>
           Milestones
         </h2>
-        <TimelineItem date="Q1 2022" isChecked title="Title One">
-          <b>Filecoin Virtual Machine</b> launches.
+        <TimelineItem
+          date="Q1 2022"
+          isChecked
+          title="Filecoin Virtual Machine launches"
+        >
+          <b>Filecoin Virtual Machine</b> launches and developers begin working
+          on tutorials, examples, and exploring new applications with data.
         </TimelineItem>
-        <TimelineItem date="Q2 2022" title="Title Two">
-          Lorem Ipsum: Filecoin is a peer-to-peer network that stores files on
-          the internet, with built-in economic incentives to ensure files are
-          stored reliably over time. <br />
-          <br />
-          Available storage and pricing is not controlled by any single company.
-          Instead, Filecoin facilitates open markets for storing and retrieving
-          files that anyone can participate in.
-        </TimelineItem>
-        <TimelineItem date="Q3 2022" title="Title Three">
-          Lorem Ipsum: Filecoin is a peer-to-peer network that stores files on
-          the internet, with built-in economic incentives to ensure files are
-          stored reliably over time. <br />
-          <br />
-          Available storage and pricing is not controlled by any single company.
-          Instead, Filecoin facilitates open markets for storing and retrieving
-          files that anyone can participate in.
-        </TimelineItem>
-        <TimelineItem date="Q4 2022" title="Title Four">
-          Lorem Ipsum: Filecoin is a peer-to-peer network that stores files on
-          the internet, with built-in economic incentives to ensure files are
-          stored reliably over time. <br />
-          <br /> Available storage and pricing is not controlled by any single
-          company. Instead, Filecoin facilitates open markets for storing and
-          retrieving files that anyone can participate in.
+        <TimelineItem date="Q2 2022" title="Developer preview">
+          New clear and informative documentation is released to the world. More
+          tools for developers to write smart contracts and take full advantage
+          of the immense capabilities of the Filecoin Network.
         </TimelineItem>
       </div>
 
@@ -211,20 +185,19 @@ function Home(props) {
             Developer
           </h3>
           <ListComponent title="Tutorials">
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files.
+            Learn how to use the FVM with some simple tutorials.
           </ListComponent>
           <ListComponent title="Open issues">
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files.
+            Follow the issues on GitHub and stay up to date.
           </ListComponent>
           <h3 className={styles.h3} style={{ marginTop: 48 }}>
             Specification
           </h3>
           <ListComponent title="FVM Architecture">
-            {" "}
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files.
+            Learn how the FVM works and the technologies involved.
           </ListComponent>
           <ListComponent title="EVM Compatibility">
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files.
+            Learn how the EVM works and how you can use the EVM with the FVM.
           </ListComponent>
         </div>
 
@@ -233,16 +206,13 @@ function Home(props) {
             SDK
           </h3>
           <ListComponent title="Rust SDK">
-            {" "}
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files.
+            Write smart contracts on the FVM with Rust
           </ListComponent>
           <ListComponent title="Go SDK">
-            {" "}
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files.
+            Write smart contracts on the FVM with Go
           </ListComponent>
           <ListComponent title="C++ SDK">
-            {" "}
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files.
+            Write smart contracts on the FVM with C++
           </ListComponent>
         </div>
       </div>

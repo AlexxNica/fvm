@@ -26,7 +26,10 @@ function TopicPickerGrid(props) {
                   background: isSelected ? "var(--color-anchor-gray)" : null,
                 }}
               >
-                {each.topic}
+                <div className={styles.number}>
+                  {`${index}`.padStart(3, `0`)}
+                </div>
+                <div className={styles.text}>{each.topic}</div>
               </div>
             </span>
           );

@@ -37,23 +37,41 @@
 }
 
 .item {
-  border: 1px solid var(--theme-border);
+  background: var(--color-dark-black);
   margin: 12px;
-  height: 188px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   transition: 200ms ease all;
+  height: 288px;
 
   &:hover {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.1);
   }
 
   @media (max-width: 768px) {
     height: auto;
     padding: 12px;
   }
+}
+
+.number {
+  font-family: "Mono";
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+}
+
+.text {
+  font-family: "Heading";
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  display: block;
+  font-size: var(--typescale-3);
+  padding-right: 48px;
 }
 
 .h2 {
