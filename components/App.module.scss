@@ -143,30 +143,50 @@
   line-height: 1.5;
 }
 
+.actions {
+  margin-top: 16px;
+}
+
 .actionButton {
   background: var(--theme-button);
   display: inline-flex;
   flex-direction: column;
-  min-height: 88px;
-  padding: 16px;
-  max-width: 274px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  text-transform: uppercase;
+  height: 70px;
+  border-radius: 70px;
+  min-width: 180px;
+  padding: 4px 32px 0 32px;
+  letter-spacing: 0.8px;
+  font-size: 10px;
+  text-align: center;
   margin: 24px 24px 24px 0;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: 200ms ease all;
+  text-decoration: none;
+
+  &:hover {
+    background: var(--theme-button-hover);
+  }
 }
 
 .actionButtonTitle {
-  font-size: var(--typescale-base);
+  letter-spacing: 2px;
   font-family: "Halbfett";
   font-weight: 400;
   display: block;
+  color: rgba(255, 255, 255, 1);
 }
 
 .actionButtonText {
-  font-size: var(--typescale-1);
-  margin-top: 8px;
+  margin-top: 4px;
   display: block;
   line-height: 1.5;
+  letter-spacing: 1.2px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .timelineItem {

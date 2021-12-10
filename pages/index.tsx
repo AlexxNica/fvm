@@ -80,10 +80,10 @@ function TopicComponent(props) {
 
 function ActionButton(props) {
   return (
-    <span className={styles.actionButton}>
+    <a className={styles.actionButton} target="_blank" href={props.href}>
       <span className={styles.actionButtonTitle}>{props.title}</span>
       <span className={styles.actionButtonText}>{props.children}</span>
-    </span>
+    </a>
   );
 }
 
@@ -138,12 +138,15 @@ function Home(props) {
         </p>
 
         <div className={styles.actions}>
-          <ActionButton title="Apply for a grant">
-            Get a grant to contribute to the functionality of the FVM
+          <ActionButton
+            title="Apply for a grant"
+            href="https://grants.filecoin.io/"
+          >
+            Contribute to the FVM
           </ActionButton>
 
-          <ActionButton title="Discussion">
-            Join the discussion on Discord or Slack today.
+          <ActionButton title="Talk to us" href="https://filecoin.io/slack">
+            Join discussion
           </ActionButton>
         </div>
       </div>
