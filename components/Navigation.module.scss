@@ -11,6 +11,13 @@
 
 .item {
   font-weight: 400;
+  color: var(--color-light-gray);
+  transition: 200ms ease all;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-shark-gray);
+  }
 }
 
 .left {

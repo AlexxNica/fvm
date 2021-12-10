@@ -8,13 +8,21 @@ function Navigation(props) {
           <span className={styles.item}>Filecoin Virtual Machine</span>
         </div>
         <div className={styles.right}>
-          <span className={styles.item} style={{ marginLeft: 24 }}>
+          <a
+            href="https://docs.filecoin.io"
+            className={styles.item}
+            style={{ marginLeft: 24 }}
+          >
             Documentation
-          </span>
+          </a>
 
-          <span className={styles.item} style={{ marginLeft: 24 }}>
+          <a
+            href="https://filecoin.io"
+            className={styles.item}
+            style={{ marginLeft: 24 }}
+          >
             Filecoin
-          </span>
+          </a>
         </div>
       </nav>
     </div>

@@ -5,10 +5,12 @@ import * as React from "react";
 function TopicPickerGrid(props) {
   const [state, setState] = React.useState({ selected: props.topics[0] });
 
+  React.useEffect(() => {}, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        {props.topics.map((each) => {
+        {props.topics.map((each, index) => {
           const isSelected = each.topic === state.selected.topic;
           return (
             <span
