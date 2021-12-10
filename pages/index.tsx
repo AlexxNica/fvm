@@ -117,7 +117,11 @@ function Home(props) {
   }, []);
 
   return (
-    <App title="fvm" description="fvm" url="https://fvm.filecoin.io">
+    <App
+      title="Filecoin Virtual Machine"
+      description="Programmable storage is coming to the Filecoin Network."
+      url="https://fvm.filecoin.io"
+    >
       <Navigation />
 
       <div
