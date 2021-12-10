@@ -13,34 +13,111 @@ import TopicPickerGrid from "@components/TopicPickerGrid";
 
 const TOPICS = [
   {
-    topic: "Decentralized compute infrastructure",
-    description:
-      "You can use Filecoin smart contracts that run on the Filecoin blockchain to take advantage of additional compute power that a storage provider can provide to do post processing on your data before retrieval.",
+    topic: "Decentralized computation",
+    description: (
+      <React.Fragment>
+        With Filecoin and IPFS, content-addressed data may be stored anywhere in
+        the globe. Furthermore, the structure of datasets varies dramatically.
+        Data nodes can be coarse or fine-grained, and highly capillarized
+        through links, such that segments of a given dataset can be highly
+        distributed and stored far away from one another. Frequently, users want
+        to execute data pipelines to validate, transform, aggregate, normalize,
+        and generally process datasets to extract insights, construct models,
+        and derive new value. Moving the data to a central compute location is
+        not an option, and enabling decentralized computation pipelines is a
+        must.
+        <br />
+        <br />
+        The means to broker computational resources, transact with workloads,
+        track placement, incentivise execution, and prove the validity of the
+        result in order to claim rewards.
+      </React.Fragment>
+    ),
   },
   {
     topic: "Dataset preservation and permeance",
-    description:
-      "Keep your data around forever. By leveraging a smart contract on the Filecoin Network, you can create a Filecoin account that has a balance and place a bounty for any storage providers to store your data. The contract can also define rules for storage and automatically enforce them via the code.",
+    description: (
+      <React.Fragment>
+        Many datasets for common goods are stewarded and hosted by a single
+        organization (like a government or company). If that organization goes
+        away or changes motivation, the data could be lost forever. Furthermore,
+        there is no guarantee of non-tampering as those datasets are frequently
+        not content-addressed nor hash-linked.
+        <br />
+        <br />A contract that would enable anyone to collaborate to fund storing
+        societally important data in perpetuity, independent of the creator’s
+        motivations. Things like data sets representing crime statistics,
+        environmental warming or election results could be made available
+        publicly forever, and funded by the community. These data sets would
+        also be verifiable that they have not been altered since publication.
+      </React.Fragment>
+    ),
   },
   {
-    topic: "Storage markets",
-    description:
-      "You can use a Filecoin smart contract to create a market place for data on the Filecoin Network. This program can become an entire business model on its own and help you monetize your datasets and do price discovery for the value of any given dataset.",
+    topic: "Smart storage markets",
+    description: (
+      <React.Fragment>
+        Today storage markets are static - pay a certain amount and you get a
+        certain amount of storage. However, availability and needs of storage
+        are highly variable! People need storage at very different times over
+        the course of days/weeks/months. Without a truly dynamic storage market,
+        people are overpaying for storing data.
+        <br />
+        <br />
+        Based on their requirements, users could automatically program their
+        systems to store data according to certain criteria (e.g. move to a
+        replication level, increase availability, backup when the storage market
+        reaches a price) rather than blindly submitting to the network. This
+        should much more closely allow users to optimize for their needs and
+        save money in the process.
+      </React.Fragment>
+    ),
   },
   {
-    topic: "IP NFTs",
-    description:
-      "A smart contract on the Filecoin Network can create a useful program where anyone in the world can use private data. Ownership of the data can be secured by the network and access can be granted to specific entities.",
+    topic: "Commodities Market for Storage",
+    description: (
+      <React.Fragment>
+        The dynamic nature of decentralized storage costs cause planning
+        challenges for both producers and consumers. Data producers will need to
+        store data in the future for a predefined period of time and will want
+        to budget in costs now (e.g. a bank who knows they will need to store 1
+        TB of 2021 transaction data from January 1, 2022 to December 31, 2022).
+        Storage providers will want to know how much to spend on hardware based
+        on their predicted earnings. Providing a way to smooth predictability
+        about future costs and returns will bring stability to this market and
+        reduce risk.
+        <br />
+        <br />
+        By enabling users to “pre-buy” a chunk of storage space at a specific
+        price today, a data producer will be able to predict their costs over a
+        given period of time. By enabling a storage producer to bid on
+        delivering a block of storage in the future, they will be able to
+        purchase hardware and be more secure that they are margin positive.
+      </React.Fragment>
+    ),
   },
   {
-    topic: "DeFi liquidity infrastructure",
-    description:
-      "The Filecoin Network smart contracts can be used to provide financial products and services that are accessible to anyone in the world. No centralized authorities can block payments or deny you access. Smart contracts can also provide liquidity for storage and other applications.",
+    topic: "IP NFT",
+    description: (
+      <React.Fragment>
+        A non-fungible token (NFT) is a unique and non-interchangeable unit of
+        data stored on a digital ledger. Traditional NFTs can be associated with
+        photos, videos, and audio. The Filecoin Network extends support to NFTs
+        representing intellectual property, patents and licenses and data.
+      </React.Fragment>
+    ),
   },
   {
     topic: "Data DAOS",
-    description:
-      "DAO are member-owned communities without centralized leadership. They are a safe way to collaborate with internet strangers and a safe place to commit funds for a specific cause. Now with IP NFTs and data storage capabilities, the participants of your DAO can participate in new novel applications.",
+    description: (
+      <React.Fragment>
+        DAO are member-owned communities without centralized leadership. They
+        are a safe way to collaborate with internet strangers and a safe place
+        to commit funds for a specific cause. Now with IP NFTs and data storage
+        capabilities, the participants of your DAO can participate in new novel
+        applications.
+      </React.Fragment>
+    ),
   },
 ];
 
