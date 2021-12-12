@@ -128,6 +128,85 @@ const TOPICS = [
       </React.Fragment>
     ),
   },
+  {
+    topic: "Enabling L2 networks",
+    description: (
+      <React.Fragment>
+        Dedicated networks –with independent incentive systems– that conduct specialized tasks
+        on top of the Filecoin network. Layer 2 solutions commit their state
+        onto the Filecoin network (Layer 1), thus inheriting its security properties.
+        <br />
+        <br />
+        Examples include:
+        * Trustless reputation systems that measure and report the Quality of
+          Service of storage providers, as perceived from different geographical
+          locations around the globe.
+        * Data availability sampling networks that challenge storage providers by
+          retrieving random data, and verifying correct delivery within a specific
+          time window.
+        * Content Delivery Networks that cache data stored in Filecoin deals by
+          replicating it across a number of geographies to ensure quick retrieval
+          around the globe.  
+      </React.Fragment>
+    )
+  },
+  {
+    topic: "Cross-chain interoperability bridges",
+    description: (
+      <React.Fragment>
+        Filecoin actors that serve as bridges by understanding the cryptographic
+        primitives and data structures of other chains, so as to demonstrate to
+        other Filecoin actors that certain events or state transitions happened,
+        and viceversa, or move value atomically across chains.
+        <br />
+        <br />
+        This also works in the opposite direction. For example, Filecoin actors
+        would be able to generate proofs about Filecoin state (e.g. deals, sectors,
+        storage providers, balances) or transactions that are comprehensible by
+        Ethereum, NEAR, Solana, etc. counterparts bridge contracts.
+      </React.Fragment>
+    )
+  },
+  {
+    topic: "New storage market primitives",
+    description: (
+      <React.Fragment>
+        To store data in the Filecoin network, clients must find a suitable
+        storage provider and perform a deal with them. This model is simple but
+        rather inflexible.
+        <br />
+        <br />
+        Imagine creating composable market primitives such as:
+        * storage bounties, where storage providers compete to win deals,
+          bringing the price down.
+        * full-sector auctions, where clients get a discount for purchasing
+          and occupying entire sectors.
+        * volume discounts, where the price is further reduced for purchasing
+          multiple sectors at once.
+        * sector rebates, where the provider refunds the client (who could be
+          a DataDAO!) once they purchase N sectors over a specific period of
+          time.
+      </React.Fragment>
+    )
+  },
+  {
+    topic: "Replication workers",
+    description: (
+      <React.Fragment>
+        Clients want their data to be replicated across the network to maximize the
+        chances it will survive in the event of storage provider failures. To achieve
+        that today, clients have to execute N deals with miners, transferring the data
+        N times.
+        <br />
+        <br />
+        Replication workers solve this problem by charging an amount to act as a mediator.
+        They take the Filecoin deal, and make sure it's replicated N times across the network.
+        They do so in accordance with a user-defined policy based on number of replicas,
+        region selection, latency, price, etc. (potentially using L2 reputation systems
+        to decide where to place the data!)
+      </React.Fragment>
+    )
+  }
 ];
 
 function ListComponent(props) {
