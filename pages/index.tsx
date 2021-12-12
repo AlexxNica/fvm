@@ -370,7 +370,7 @@ function Home(props) {
             Follow the issues on GitHub and stay up to date.
           </ListComponent>
           <h3 className={styles.h3} style={{ marginTop: 48 }}>
-            Specification
+            Specifications
           </h3>
           <ListComponent title="FVM Architecture">
             Learn how the FVM works and the technologies involved.
@@ -382,7 +382,7 @@ function Home(props) {
 
         <div className={styles.rowCol}>
           <h3 className={styles.h3} style={{ marginTop: 48 }}>
-            SDK
+            SDKs
           </h3>
           <ListComponent title="Rust SDK">
             {/* @cake 'coming soon' badge? */}
