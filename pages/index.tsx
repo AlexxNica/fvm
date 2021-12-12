@@ -38,18 +38,23 @@ const TOPICS = [
     topic: "Perpetual Storage",
     description: (
       <React.Fragment>
-        Many datasets for common goods are stewarded and hosted by a single
-        organization (like a government or company). If that organization goes
-        away or changes motivation, the data could be lost forever. Furthermore,
-        there is no guarantee of non-tampering as those datasets are frequently
-        not content-addressed nor hash-linked.
+        Many datasets for common goods rely on stewards (e.g. a government,
+        corporation, or non-profit) to ensure their preservation. stewarded and
+        hosted by a single organization (like a government or company). If that
+        organization goes away or changes motivation, the data could be lost
+        forever.
         <br />
-        <br />A contract that would enable anyone to collaborate to fund storing
-        societally important data in perpetuity, independent of the creator’s
-        motivations. Things like data sets representing crime statistics,
-        environmental warming or election results could be made available
-        publicly forever, and funded by the community. These data sets would
-        also be verifiable that they have not been altered since publication.
+        <br />
+        With smart contracts, the responsibility of ensuring data is
+        sufficiently replicated and renewed can be delegated to permissionless
+        code running autonomously on-chain - with no risk of modification or
+        mutation of the underlying datasets. Funding mechanisms can be coupled
+        with [DataDAOs](/datadaos) and [Staking Protocols](/staking-protocols)
+        to enable pay-once-store-forever mechanics.
+        <br />
+        <br />
+        Example use cases: Crime statistics, inflation metrics, election
+        results.
       </React.Fragment>
     ),
   },
