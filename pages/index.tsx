@@ -87,7 +87,21 @@ const TOPICS = [
   },
   {
     topic: "Staking Protocols",
-    description: <React.Fragment>...</React.Fragment>,
+    description: (
+      <React.Fragment>
+        Staking Protocols can substantially improve the capital efficiency in
+        the Filecoin economy - matching yield-seeking token holders and
+        liquidity-seeking storage providers. With staking protocols, token
+        holders can trustlessly pool their assets and set rules and terms by
+        which storage providers (of any size) can permissionlessly access that
+        liquidity.
+        <br />
+        <br />
+        Staking protocols can use on-chain metrics (e.g. longevity of an
+        address, history of slashing) to better assess risk while also allowing
+        storage providers of all sizes to access capital.{" "}
+      </React.Fragment>
+    ),
   },
   {
     topic: "Data DAOS",
