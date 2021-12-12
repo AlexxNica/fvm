@@ -1,10 +1,5 @@
 const Logo = (props) => (
-  <svg
-    fill="none"
-    {...props}
-    viewBox="0 0 74 111"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg fill="none" {...props} viewBox="0 0 74 111">
     <clipPath id="a">
       <path d="m.461121.525742h72.7021v110.155h-72.7021z" />
     </clipPath>

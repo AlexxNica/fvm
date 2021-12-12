@@ -13,7 +13,7 @@ import TopicPickerGrid from "@components/TopicPickerGrid";
 
 const TOPICS = [
   {
-    topic: "Decentralized computation",
+    topic: "Decentralized Compute",
     description: (
       <React.Fragment>
         With Filecoin and IPFS, content-addressed data may be stored anywhere in
@@ -35,7 +35,7 @@ const TOPICS = [
     ),
   },
   {
-    topic: "Dataset preservation and permeance",
+    topic: "Perpetual Storage",
     description: (
       <React.Fragment>
         Many datasets for common goods are stewarded and hosted by a single
@@ -54,27 +54,11 @@ const TOPICS = [
     ),
   },
   {
-    topic: "Smart storage markets",
-    description: (
-      <React.Fragment>
-        Today storage markets are static - pay a certain amount and you get a
-        certain amount of storage. However, availability and needs of storage
-        are highly variable! People need storage at very different times over
-        the course of days/weeks/months. Without a truly dynamic storage market,
-        people are overpaying for storing data.
-        <br />
-        <br />
-        Based on their requirements, users could automatically program their
-        systems to store data according to certain criteria (e.g. move to a
-        replication level, increase availability, backup when the storage market
-        reaches a price) rather than blindly submitting to the network. This
-        should much more closely allow users to optimize for their needs and
-        save money in the process.
-      </React.Fragment>
-    ),
+    topic: "Insurance Protocols",
+    description: <React.Fragment>...</React.Fragment>,
   },
   {
-    topic: "Commodities Market for Storage",
+    topic: "Storage Derivatives",
     description: (
       <React.Fragment>
         The dynamic nature of decentralized storage costs cause planning
@@ -97,15 +81,8 @@ const TOPICS = [
     ),
   },
   {
-    topic: "IP NFT",
-    description: (
-      <React.Fragment>
-        A non-fungible token (NFT) is a unique and non-interchangeable unit of
-        data stored on a digital ledger. Traditional NFTs can be associated with
-        photos, videos, and audio. The Filecoin Network extends support to NFTs
-        representing intellectual property, patents and licenses and data.
-      </React.Fragment>
-    ),
+    topic: "Staking Protocols",
+    description: <React.Fragment>...</React.Fragment>,
   },
   {
     topic: "Data DAOS",
