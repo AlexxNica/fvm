@@ -93,11 +93,10 @@ const TOPICS = [
     topic: "Data DAOS",
     description: (
       <React.Fragment>
-        DAO are member-owned communities without centralized leadership. They
-        are a safe way to collaborate with internet strangers and a safe place
-        to commit funds for a specific cause. Now with IP NFTs and data storage
-        capabilities, the participants of your DAO can participate in new novel
-        applications.
+        DAOs (Decentralized Autonomous Organizations) are member-owned
+        communities with no centralized leadership. With the FVM, communities
+        can collectively fund and govern the storage of public-good datasets to
+        ensure their long term preservation and availability.
       </React.Fragment>
     ),
   },
