@@ -260,18 +260,20 @@ function Home(props) {
         </h2>
         <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>
           Actors are the equivalent of smart contracts in Filecoin. Deploy
-          existing EVM smart contracts as actors, or write native actors from
-          scratch in Rust.
+          existing EVM smart contracts as Filecoin actors, or write native
+          actors from scratch using the reference Rust SDK (or create
+          your own SDK!).
         </p>
       </div>
 
       <div className={styles.row} style={{ paddingBottom: 128 }}>
         <div className={styles.rowCol}>
           <h3 className={styles.h3} style={{ marginTop: 48 }}>
-            Developer
+            Developer resources
           </h3>
           <ListComponent title="Tutorials">
-            Learn how to use the FVM with some simple tutorials.
+            {/* @cake 'coming soon' badge? */}
+            Learn how to deploy to the FVM with some simple tutorials.
           </ListComponent>
           <ListComponent title="Open issues">
             Follow the issues on GitHub and stay up to date.
@@ -283,7 +285,7 @@ function Home(props) {
             Learn how the FVM works and the technologies involved.
           </ListComponent>
           <ListComponent title="EVM Compatibility">
-            Learn how the EVM works and how you can use the EVM with the FVM.
+            Learn how the EVM emulation works, and how you can use the EVM with the FVM.
           </ListComponent>
         </div>
 
@@ -292,13 +294,20 @@ function Home(props) {
             SDK
           </h3>
           <ListComponent title="Rust SDK">
-            Write smart contracts on the FVM with Rust
+            {/* @cake 'coming soon' badge? */}
+            Write Filecoin actors in Rust
+          </ListComponent>
+          <ListComponent title="Swift SDK">
+            {/* @cake 'build it' badge? */}
+            Write Filecoin actors in Swift
+          </ListComponent>
+          <ListComponent title="Kotlin SDK">
+            {/* @cake 'build it' badge? */}
+            Write Filecoin actors in Kotlin
           </ListComponent>
           <ListComponent title="Go SDK">
-            Write smart contracts on the FVM with Go
-          </ListComponent>
-          <ListComponent title="C++ SDK">
-            Write smart contracts on the FVM with C++
+            {/* @cake 'build it' badge? */}
+            Write Filecoin actors in Go (using the TinyGo compiler)
           </ListComponent>
         </div>
       </div>
