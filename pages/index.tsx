@@ -211,10 +211,22 @@ function Home(props) {
       <div className={styles.section}>
         <h2 className={styles.h2}>Possibilities</h2>
         <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>
-          Smart contracts on the Filecoin Network help you exchange anything of
-          value, money, property, shares, and now storage in a conflict free
-          way. With the addition of the FVM on the Filecoin Network, new
-          possibilities exist that have never existed before.
+          <b>Storage and programs under one roof.</b> This is the grand vision of
+          the Filecoin network. And the Filecoin Virtual Machine is pivotal to make it
+          happen.
+          <br />
+          <br />
+          The FVM unlocks boundless possibilities, ranging from programmable
+          storage primitives (such as storage bounties, auctions, and more),
+          to Layer 2 solutions (such as reputation systems, data availability sampling,
+          computation fabrics, and incentive-aligned Content Delivery Networks),
+          to cross-chain interoperability bridges (e.g. connecting Filecoin with Ethereum,
+          Solana, NEAR, and more, in a trustless manner), to data-oriented Decentralized
+          Autonomous Organizations (DAOs).
+          <br />
+          <br />
+          Here are some of the things we're excited to see deployed on the Filecoin network.
+          It's on you to make them happen!
         </p>
 
         <div className={styles.actions}>
