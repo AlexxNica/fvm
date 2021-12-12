@@ -18,19 +18,23 @@ const TOPICS = [
       <React.Fragment>
         With Filecoin and IPFS, content-addressed data may be stored anywhere in
         the globe. Furthermore, the structure of datasets varies dramatically.
-        Data nodes can be coarse or fine-grained, and highly capillarized
-        through links, such that segments of a given dataset can be highly
-        distributed and stored far away from one another. Frequently, users want
-        to execute data pipelines to validate, transform, aggregate, normalize,
-        and generally process datasets to extract insights, construct models,
-        and derive new value. Moving the data to a central compute location is
-        not an option, and enabling decentralized computation pipelines is a
-        must.
+        Data can be coarse or fine-grained, and its individual units can be
+        hash-linked with [IPLD](https://ipld.io/). Data can be highly capillarized
+        and disseminated throughout the network. As a result, segments of
+        a given dataset may be stored far away from one another.
         <br />
         <br />
-        The means to broker computational resources, transact with workloads,
-        track placement, incentivise execution, and prove the validity of the
-        result in order to claim rewards.
+        Frequently, users want to execute data pipelines to validate, transform,
+        aggregate, normalize, and generally process datasets to extract insights,
+        construct models, and derive new value. Regrouping highly distributed data
+        into a central location to perform compute on it is expensive, underperformant,
+        and undesirable. Therefore, pushing compute to the edges and creating systems
+        to coordinate decentralized computation pipelines is a must.
+        <br />
+        <br />
+        FVM actors can help to broker computational resources, incentivize execution,
+        distribute workloads, and prove the validity of the result in order to claim
+        rewards.
       </React.Fragment>
     ),
   },
