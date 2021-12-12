@@ -118,7 +118,7 @@ const TOPICS = [
     ),
   },
   {
-    topic: "Data DAOS",
+    topic: "Data DAOs",
     description: (
       <React.Fragment>
         DAOs (Decentralized Autonomous Organizations) are member-owned
