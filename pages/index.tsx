@@ -66,7 +66,15 @@ const TOPICS = [
   },
   {
     topic: "Insurance Protocols",
-    description: <React.Fragment>...</React.Fragment>,
+    description: (
+      <React.Fragment>
+        When offering storage services to the network, storage providers are
+        required to put a large amount of collateral. Insurance protocols allow
+        storage providers can better select risk to align with their desired
+        profile by offering fees to investors. Investors (or DAOs) can receive a
+        revenue stream by purchasing said risk in exchange for recurring fees.
+      </React.Fragment>
+    ),
   },
   {
     topic: "Storage Derivatives",
@@ -293,110 +301,6 @@ function Home(props) {
             Write smart contracts on the FVM with C++
           </ListComponent>
         </div>
-      </div>
-
-      <div className={styles.section}>
-        <h2 className={styles.h2} style={{ marginTop: 88, marginBottom: 48 }}>
-          Opportunities
-        </h2>
-
-        <CondensedSection title="Data DAOs" expanded>
-          <p className={styles.p} style={{ maxWidth: 768 }}>
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files,
-            with built-in economic incentives to ensure files are stored
-            reliably over time.
-            <br />
-            <br />
-            Lorem Ispum: In Filecoin, users pay to store their files on storage
-            miners. Storage miners are computers responsible for storing files
-            and proving they have stored the files correctly over time. Anyone
-            who wants to store their files or get paid for storing other users’
-            files can join Filecoin. Available storage, and the price of that
-            storage, is not controlled by any single company. Instead, Filecoin
-            facilitates open markets for storing and retrieving files that
-            anyone can participate in.
-            <br />
-            <br />
-            Lorem Ipsum: Filecoin includes a blockchain and native
-            cryptocurrency (FIL). Storage miners earn units of FIL for storing
-            files. Filecoin’s blockchain records transactions to send and
-            receive FIL, along with proofs from storage miners that they are
-            storing their files correctly.
-          </p>
-        </CondensedSection>
-
-        <CondensedSection title="Cross chain oracles">
-          <p className={styles.p} style={{ maxWidth: 768 }}>
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files,
-            with built-in economic incentives to ensure files are stored
-            reliably over time.
-            <br />
-            <br />
-            Lorem Ipsum: In Filecoin, users pay to store their files on storage
-            miners. Storage miners are computers responsible for storing files
-            and proving they have stored the files correctly over time. Anyone
-            who wants to store their files or get paid for storing other users’
-            files can join Filecoin. Available storage, and the price of that
-            storage, is not controlled by any single company. Instead, Filecoin
-            facilitates open markets for storing and retrieving files that
-            anyone can participate in.
-            <br />
-            <br />
-            Lorem Ipsum: Filecoin includes a blockchain and native
-            cryptocurrency (FIL). Storage miners earn units of FIL for storing
-            files. Filecoin’s blockchain records transactions to send and
-            receive FIL, along with proofs from storage miners that they are
-            storing their files correctly.
-          </p>
-
-          <p className={styles.p} style={{ maxWidth: 768, marginTop: 48 }}>
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files,
-            with built-in economic incentives to ensure files are stored
-            reliably over time.
-            <br />
-            <br />
-            Lorem Ipsum: In Filecoin, users pay to store their files on storage
-            miners. Storage miners are computers responsible for storing files
-            and proving they have stored the files correctly over time. Anyone
-            who wants to store their files or get paid for storing other users’
-            files can join Filecoin. Available storage, and the price of that
-            storage, is not controlled by any single company. Instead, Filecoin
-            facilitates open markets for storing and retrieving files that
-            anyone can participate in.
-            <br />
-            <br />
-            Lorem Ipsum: Filecoin includes a blockchain and native
-            cryptocurrency (FIL). Storage miners earn units of FIL for storing
-            files. Filecoin’s blockchain records transactions to send and
-            receive FIL, along with proofs from storage miners that they are
-            storing their files correctly.
-          </p>
-        </CondensedSection>
-
-        <CondensedSection title="Compute over data">
-          <p className={styles.p} style={{ maxWidth: 768 }}>
-            Lorem Ipsum: Filecoin is a peer-to-peer network that stores files,
-            with built-in economic incentives to ensure files are stored
-            reliably over time.
-            <br />
-            <br />
-            Lorem Ipsum: In Filecoin, users pay to store their files on storage
-            miners. Storage miners are computers responsible for storing files
-            and proving they have stored the files correctly over time. Anyone
-            who wants to store their files or get paid for storing other users’
-            files can join Filecoin. Available storage, and the price of that
-            storage, is not controlled by any single company. Instead, Filecoin
-            facilitates open markets for storing and retrieving files that
-            anyone can participate in.
-            <br />
-            <br />
-            Lorem Ipsum: Filecoin includes a blockchain and native
-            cryptocurrency (FIL). Storage miners earn units of FIL for storing
-            files. Filecoin’s blockchain records transactions to send and
-            receive FIL, along with proofs from storage miners that they are
-            storing their files correctly.
-          </p>
-        </CondensedSection>
       </div>
 
       <div className={styles.section}>
