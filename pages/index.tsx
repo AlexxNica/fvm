@@ -145,7 +145,8 @@ const TOPICS = [
           retrieving random data, and verifying correct delivery within a specific
           time window.
         * Content Delivery Networks that cache data stored in Filecoin deals by
-          replicating it across a number of geographies to ensure quick retrieval
+          replicating it across a number of geographies, and making it accessible
+          through a number of transports, to ensure quick and seamless retrieval
           around the globe.  
       </React.Fragment>
     )
@@ -328,20 +329,47 @@ function Home(props) {
 
       <div className={styles.section}>
         <h2 className={styles.h2} style={{ marginTop: 88, marginBottom: 24 }}>
-          Milestones
+          Roadmap
         </h2>
+        <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>
+          <b>The Filecoin Virtual Machine will be introduced incrementally.</b>
+          This minimizes the risk of disruption to the network.
+          <br />
+          <br />
+          Follow the progress and participate in the different phases! If you're
+          a web3 developer, start ideating the next generation of Filecoin-based
+          trustless applications now.
+          <br />
+          <br />
+          As the roadmap progresses, more and more resources will become available
+          to onboard, so stay tuned.
+        </p>
         <TimelineItem
-          date="Q1 2022"
+          date="Q4 2021"
           isChecked
-          title="Filecoin Virtual Machine launches"
+          title="Milestone 0: Preview of built-in actors on FVM"
         >
-          <b>Filecoin Virtual Machine</b> launches and developers begin working
+          Canary nodes running Built-in actors will be compiled to WASM. The FVM prototype will be
+          integrated into Lotus behindn a feature flag. This  with the existing chain and requiring no protocol upgrade.<b>Filecoin Virtual Machine</b> launches and developers begin working
           on tutorials, examples, and exploring new applications with data.
         </TimelineItem>
-        <TimelineItem date="Q2 2022" title="Developer preview">
+        <TimelineItem
+          date="Q1 2022"
+          title="Milestone 1: Mainnet deployment of built-in actors on FVM"
+        >
           New clear and informative documentation is released to the world. More
           tools for developers to write smart contracts and take full advantage
           of the immense capabilities of the Filecoin Network.
+        </TimelineItem>
+        <TimelineItem
+          date="Q2 2022"
+          title="Milestone 2: "
+        >
+        </TimelineItem>
+        <TimelineItem
+          date="Q2 2022"
+          title="Milestone 2: "
+        >
         </TimelineItem>
       </div>
 
