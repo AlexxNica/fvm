@@ -19,22 +19,23 @@ const TOPICS = [
         With Filecoin and IPFS, content-addressed data may be stored anywhere in
         the globe. Furthermore, the structure of datasets varies dramatically.
         Data can be coarse or fine-grained, and its individual units can be
-        hash-linked with [IPLD](https://ipld.io/). Data can be highly capillarized
-        and disseminated throughout the network. As a result, segments of
-        a given dataset may be stored far away from one another.
+        hash-linked with [IPLD](https://ipld.io/). Data can be highly
+        capillarized and disseminated throughout the network. As a result,
+        segments of a given dataset may be stored far away from one another.
         <br />
         <br />
         Frequently, users want to execute data pipelines to validate, transform,
-        aggregate, normalize, and generally process datasets to extract insights,
-        construct models, and derive new value. Regrouping highly distributed data
-        into a central location to perform compute on it is expensive, underperformant,
-        and undesirable. Therefore, pushing compute to the edges and creating systems
-        to coordinate decentralized computation pipelines is a must.
+        aggregate, normalize, and generally process datasets to extract
+        insights, construct models, and derive new value. Regrouping highly
+        distributed data into a central location to perform compute on it is
+        expensive, underperformant, and undesirable. Therefore, pushing compute
+        to the edges and creating systems to coordinate decentralized
+        computation pipelines is a must.
         <br />
         <br />
-        FVM actors can help to broker computational resources, incentivize execution,
-        distribute workloads, and prove the validity of the result in order to claim
-        rewards.
+        FVM actors can help to broker computational resources, incentivize
+        execution, distribute workloads, and prove the validity of the result in
+        order to claim rewards.
       </React.Fragment>
     ),
   },
@@ -44,8 +45,8 @@ const TOPICS = [
       <React.Fragment>
         Many common-good datasets rely on stewarding organizations to ensure
         their preservation and continued revision (e.g. a government,
-        corporation, or non-profit). Frequently, the responsibility lies on
-        a single organization. If that organization goes away or changes
+        corporation, or non-profit). Frequently, the responsibility lies on a
+        single organization. If that organization goes away or changes
         motivation, the common-good data could be lost forever, resulting in a
         loss for society.
         <br />
@@ -132,24 +133,23 @@ const TOPICS = [
     topic: "Enabling L2 networks",
     description: (
       <React.Fragment>
-        Dedicated networks –with independent incentive systems– that conduct specialized tasks
-        on top of the Filecoin network. Layer 2 solutions commit their state
-        onto the Filecoin network (Layer 1), thus inheriting its security properties.
+        Dedicated networks –with independent incentive systems– that conduct
+        specialized tasks on top of the Filecoin network. Layer 2 solutions
+        commit their state onto the Filecoin network (Layer 1), thus inheriting
+        its security properties.
         <br />
         <br />
-        Examples include:
-        * Trustless reputation systems that measure and report the Quality of
-          Service of storage providers, as perceived from different geographical
-          locations around the globe.
-        * Data availability sampling networks that challenge storage providers by
-          retrieving random data, and verifying correct delivery within a specific
-          time window.
-        * Content Delivery Networks that cache data stored in Filecoin deals by
-          replicating it across a number of geographies, and making it accessible
-          through a number of transports, to ensure quick and seamless retrieval
-          around the globe.  
+        Examples include: * Trustless reputation systems that measure and report
+        the Quality of Service of storage providers, as perceived from different
+        geographical locations around the globe. * Data availability sampling
+        networks that challenge storage providers by retrieving random data, and
+        verifying correct delivery within a specific time window. * Content
+        Delivery Networks that cache data stored in Filecoin deals by
+        replicating it across a number of geographies, and making it accessible
+        through a number of transports, to ensure quick and seamless retrieval
+        around the globe.
       </React.Fragment>
-    )
+    ),
   },
   {
     topic: "Cross-chain interoperability bridges",
@@ -162,11 +162,12 @@ const TOPICS = [
         <br />
         <br />
         This also works in the opposite direction. For example, Filecoin actors
-        would be able to generate proofs about Filecoin state (e.g. deals, sectors,
-        storage providers, balances) or transactions that are comprehensible by
-        Ethereum, NEAR, Solana, etc. counterparts bridge contracts.
+        would be able to generate proofs about Filecoin state (e.g. deals,
+        sectors, storage providers, balances) or transactions that are
+        comprehensible by Ethereum, NEAR, Solana, etc. counterparts bridge
+        contracts.
       </React.Fragment>
-    )
+    ),
   },
   {
     topic: "New storage market primitives",
@@ -177,37 +178,35 @@ const TOPICS = [
         rather inflexible.
         <br />
         <br />
-        Imagine creating composable market primitives such as:
-        * storage bounties, where storage providers compete to win deals,
-          bringing the price down.
-        * full-sector auctions, where clients get a discount for purchasing
-          and occupying entire sectors.
-        * volume discounts, where the price is further reduced for purchasing
-          multiple sectors at once.
-        * sector rebates, where the provider refunds the client (who could be
-          a DataDAO!) once they purchase N sectors over a specific period of
-          time.
+        Imagine creating composable market primitives such as: * storage
+        bounties, where storage providers compete to win deals, bringing the
+        price down. * full-sector auctions, where clients get a discount for
+        purchasing and occupying entire sectors. * volume discounts, where the
+        price is further reduced for purchasing multiple sectors at once. *
+        sector rebates, where the provider refunds the client (who could be a
+        DataDAO!) once they purchase N sectors over a specific period of time.
       </React.Fragment>
-    )
+    ),
   },
   {
     topic: "Replication workers",
     description: (
       <React.Fragment>
-        Clients want their data to be replicated across the network to maximize the
-        chances it will survive in the event of storage provider failures. To achieve
-        that today, clients have to execute N deals with miners, transferring the data
-        N times.
+        Clients want their data to be replicated across the network to maximize
+        the chances it will survive in the event of storage provider failures.
+        To achieve that today, clients have to execute N deals with miners,
+        transferring the data N times.
         <br />
         <br />
-        Replication workers solve this problem by charging an amount to act as a mediator.
-        They take the Filecoin deal, and make sure it's replicated N times across the network.
-        They do so in accordance with a user-defined policy based on number of replicas,
-        region selection, latency, price, etc. (potentially using L2 reputation systems
-        to decide where to place the data!)
+        Replication workers solve this problem by charging an amount to act as a
+        mediator. They take the Filecoin deal, and make sure it's replicated N
+        times across the network. They do so in accordance with a user-defined
+        policy based on number of replicas, region selection, latency, price,
+        etc. (potentially using L2 reputation systems to decide where to place
+        the data!)
       </React.Fragment>
-    )
-  }
+    ),
+  },
 ];
 
 function ListComponent(props) {
@@ -291,22 +290,23 @@ function Home(props) {
       <div className={styles.section}>
         <h2 className={styles.h2}>Possibilities</h2>
         <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>
-          <b>Storage and programs under one roof.</b> This is the grand vision of
-          the Filecoin network. And the Filecoin Virtual Machine is pivotal to make it
-          happen.
+          <b>Storage and programs under one roof.</b> This is the grand vision
+          of the Filecoin network. And the Filecoin Virtual Machine is pivotal
+          to make it happen.
           <br />
           <br />
           The FVM unlocks boundless possibilities, ranging from programmable
-          storage primitives (such as storage bounties, auctions, and more),
-          to Layer 2 solutions (such as reputation systems, data availability sampling,
-          computation fabrics, and incentive-aligned Content Delivery Networks),
-          to cross-chain interoperability bridges (e.g. connecting Filecoin with Ethereum,
-          Solana, NEAR, and more, in a trustless manner), to data-oriented Decentralized
-          Autonomous Organizations (DAOs).
+          storage primitives (such as storage bounties, auctions, and more), to
+          Layer 2 solutions (such as reputation systems, data availability
+          sampling, computation fabrics, and incentive-aligned Content Delivery
+          Networks), to cross-chain interoperability bridges (e.g. connecting
+          Filecoin with Ethereum, Solana, NEAR, and more, in a trustless
+          manner), to data-oriented Decentralized Autonomous Organizations
+          (DAOs).
           <br />
           <br />
-          Here are some of the things we're excited to see deployed on the Filecoin network.
-          It's on you to make them happen!
+          Here are some of the things we're excited to see deployed on the
+          Filecoin network. It's on you to make them happen!
         </p>
 
         <div className={styles.actions}>
@@ -331,7 +331,10 @@ function Home(props) {
         <h2 className={styles.h2} style={{ marginTop: 88, marginBottom: 24 }}>
           Roadmap
         </h2>
-        <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>
+        <p
+          className={styles.p}
+          style={{ maxWidth: 488, paddingTop: 24, paddingBottom: 64 }}
+        >
           <b>The Filecoin Virtual Machine will be introduced incrementally.</b>
           This minimizes the risk of disruption to the network.
           <br />
@@ -341,16 +344,18 @@ function Home(props) {
           trustless applications now.
           <br />
           <br />
-          As the roadmap progresses, more and more resources will become available
-          to onboard, so stay tuned.
+          As the roadmap progresses, more and more resources will become
+          available to onboard, so stay tuned.
         </p>
         <TimelineItem
           date="Q4 2021"
           isChecked
           title="Milestone 0: Preview of built-in actors on FVM"
         >
-          Canary nodes running Built-in actors will be compiled to WASM. The FVM prototype will be
-          integrated into Lotus behindn a feature flag. This  with the existing chain and requiring no protocol upgrade.<b>Filecoin Virtual Machine</b> launches and developers begin working
+          Canary nodes running Built-in actors will be compiled to WASM. The FVM
+          prototype will be integrated into Lotus behindn a feature flag. This
+          with the existing chain and requiring no protocol upgrade.
+          <b>Filecoin Virtual Machine</b> launches and developers begin working
           on tutorials, examples, and exploring new applications with data.
         </TimelineItem>
         <TimelineItem
@@ -361,27 +366,19 @@ function Home(props) {
           tools for developers to write smart contracts and take full advantage
           of the immense capabilities of the Filecoin Network.
         </TimelineItem>
-        <TimelineItem
-          date="Q2 2022"
-          title="Milestone 2: "
-        >
-        </TimelineItem>
-        <TimelineItem
-          date="Q2 2022"
-          title="Milestone 2: "
-        >
-        </TimelineItem>
+        <TimelineItem date="Q2 2022" title="Milestone 2: "></TimelineItem>
+        <TimelineItem date="Q2 2022" title="Milestone 2: "></TimelineItem>
       </div>
 
       <div className={styles.section}>
-        <h2 className={styles.h2} style={{ marginTop: 96 }}>
+        <h2 className={styles.h2} style={{ marginTop: 112 }}>
           Get ready to build
         </h2>
         <p className={styles.p} style={{ maxWidth: 488, paddingTop: 24 }}>
           Actors are the equivalent of smart contracts in Filecoin. Deploy
           existing EVM smart contracts as Filecoin actors, or write native
-          actors from scratch using the reference Rust SDK (or create
-          your own SDK!).
+          actors from scratch using the reference Rust SDK (or create your own
+          SDK!).
         </p>
       </div>
 
@@ -404,7 +401,8 @@ function Home(props) {
             Learn how the FVM works and the technologies involved.
           </ListComponent>
           <ListComponent title="EVM Compatibility">
-            Learn how the EVM emulation works, and how you can use the EVM with the FVM.
+            Learn how the EVM emulation works, and how you can use the EVM with
+            the FVM.
           </ListComponent>
         </div>
 
